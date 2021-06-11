@@ -115,4 +115,19 @@ void main() {
   NoDefaultCupertinoThemeData.resolveFrom(context, nullOk: false);
   CupertinoTextThemeData.resolveFrom(context, nullOk: true);
   CupertinoTextThemeData.resolveFrom(context, nullOk: false);
+<<<<<<< HEAD
+=======
+
+  // Changes made in https://github.com/flutter/flutter/pull/72043
+  CupertinoTextField(maxLengthEnforced: true);
+  CupertinoTextField(maxLengthEnforced: false);
+  CupertinoTextField.borderless(maxLengthEnforced: true);
+  CupertinoTextField.borderless(maxLengthEnforced: false);
+  final CupertinoTextField textField;
+  textField.maxLengthEnforced;
+
+  // Changes made in https://github.com/flutter/flutter/pull/59127
+  const BottomNavigationBarItem bottomNavigationBarItem = BottomNavigationBarItem(title: myTitle);
+  bottomNavigationBarItem.title;
+>>>>>>> d79295af24c3ed621c33713ecda14ad196fd9c31
 }
